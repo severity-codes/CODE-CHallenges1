@@ -36,7 +36,31 @@ console.log(addition(8, 1));
 // }
 
 function cubes(a) {
-	return a ** 3
+  return a ** 3;
 }
 
 console.log(cubes(3));
+
+//Return the First Element in an Array// Declare the function getFirstValue which takes one argument 'arr'
+function getFirstValue(arr) {
+  // Check if 'arr' is either undefined, null, or if it's an empty array
+  if (!arr || arr.length === 0) {
+    // If the array is undefined or empty, return a message to indicate that
+    return "Array is undefined or empty";
+  }
+
+  // If the array exists and has elements, return the first element of the array
+  return arr[0];
+}
+
+// Test case 1: Call getFirstValue with a valid array [10, 20, 30]
+// Since the array is valid and has elements, it will return the first element, 10
+console.log(getFirstValue([10, 20, 30])); // Expected output: 10
+
+// Test case 2: Call getFirstValue with no arguments
+// Since no array is provided, 'arr' is undefined, so the function returns the message
+console.log(getFirstValue()); // Expected output: "Array is undefined or empty"
+
+// Test case 3: Call getFirstValue with an empty array []
+// Since the array is empty (length is 0), the function returns the message
+console.log(getFirstValue([])); // Expected output: "Array is undefined or empty"
