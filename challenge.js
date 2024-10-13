@@ -57,3 +57,26 @@ function triArea(base, height) {
   return (base * height) / 2;
 }
 console.log(2, 3);
+//convert hours to seconds function
+function howManySeconds(hours) {
+  return hours * 60 * 60;
+}
+console.log(6);
+///The function calculates 6 * 60 * 60 which equals 21600(the number of seconds in 6 hours).
+// The result (21600) is printed to the console.
+//increment a number by one
+function addition(num) {
+  return num + 1;
+}
+console.log(16);
+//find the third side of a triangle
+function nextEdge(side1, side2) {
+  return side1 + side2 - 1; // Maximum range for the third edge
+}
+// Example usage:
+console.log(nextEdge(3, 5)); // Output: 7
+function circuitPower(voltage, current) {
+  return voltage * current; // Calculate power using the formula and return the result
+}
+//Power=Voltage×Current
+console.log(circuitPower(230, 10)); // Example usage: Output 2300
